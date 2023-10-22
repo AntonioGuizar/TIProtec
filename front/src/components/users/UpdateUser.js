@@ -107,6 +107,7 @@ function UpdateUser({ match }) {
                 name='nombre'
                 value={user.nombre || ''}
                 onChange={handleInputChange}
+                required
             />
             {errorName && <span style={{color: 'red'}}>{errorName}</span>}
         </div>
@@ -119,6 +120,7 @@ function UpdateUser({ match }) {
                 name='primer_apellido'
                 value={user.primer_apellido || ''}
                 onChange={handleInputChange}
+                required
             />
             {errorFirstLastName && <span style={{color: 'red'}}>{errorFirstLastName}</span>}
         </div>
@@ -131,6 +133,7 @@ function UpdateUser({ match }) {
                 name='segundo_apellido'
                 value={user.segundo_apellido || ''}
                 onChange={handleInputChange}
+                required
             />
             {errorSecondLastName && <span style={{color: 'red'}}>{errorSecondLastName}</span>}
         </div>
@@ -143,6 +146,7 @@ function UpdateUser({ match }) {
                 name='fecha_nacimiento'
                 value={user.fecha_nacimiento || ''}
                 onChange={handleInputChange}
+                required
             />
             {errorDate && <span style={{color: 'red'}}>{errorDate}</span>}
         </div>
@@ -155,6 +159,7 @@ function UpdateUser({ match }) {
                 name='email'
                 value={user.email || ''}
                 onChange={handleInputChange}
+                required
             />
             {errorEmail && <span style={{color: 'red'}}>{errorEmail}</span>}
         </div>
@@ -166,6 +171,7 @@ function UpdateUser({ match }) {
                 name='rol'
                 value={user.rol || ''}
                 onChange={handleInputChange}
+                required
             >
                 <option value=''>Select a role</option>
                 <option value='Administrador'>Administrador</option>

@@ -20,6 +20,7 @@ git clone git@github.com:AntonioGuizar/TIProtec.git
 ```
 With your terminal go to the folder /back and run
 ```bash
+composer install
 php spark serve
 ```
 After that run to the folder /front and run
